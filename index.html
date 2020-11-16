@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    
+    <title>Böngésző cím</title>
+    <link rel="stylesheet" href="stilus.css">
+    <script src="slideshow.js"></script>
+  </head>
+  <body>
+    <h1 id="top">Ez egy címsor - legmagasabb szintű</h1>
+    <h2>Ez egy címsor - kettes szintű</h2>
+    <h3>Ez egy címsor - hármas szintű</h3>
+    <hr>
+    <h1>Tartalom</h1>
+    <ul>
+      <li>Bekezdések</li>
+      <li>Számozott lista</li>
+      <li>Táblázat</li>
+      <li>Képek</li>
+      <li>Hiperhivatkozások</li>
+      <li>Gombok</li>
+    </ul>
+    <hr>
+    <p>Ez egy bekezdés</p>
+    <p>Ez egy másik bekezdés</p>
+    <p id="demo">Ez egy bekezdés,<br>amely többsoros.</p>
+    <pre>Ez egy szerkesztőben
+    formázott bekezdés</pre>
+
+    <!--Számozott lista-->
+
+    <!--Táblázat-->
+
+    <!--Képek-->
+
+    <img src="kepek\itsmunka.jpg" alt="its munkakör" title="IT-s munkakör" style="float:right;border-radius:10%;width:150px;">
+    <br />
+    <img src="kepek\itsmunka.jpg" alt="its munkakör" title="IT-s munkakör" style="width:150px;">
+    <br />
+    <br />
+
+    <!--Hiperhivatkozások-->
+
+    <a href="http://gepeszeti.hu/" target="_top">MSZC Gépészeti Technikum</a>
+    <br />
+    <a href="http://nyirszikszi.hu/" target="_blank">NYSzC Széchenyi Technikum</a>
+    <br />
+    <a href="#top">Vissza az oldal tetejére</a>
+    <br />
+    
+
+    <!--Gombok javascript kóddal-->
+
+    <button onclick="myFunction()">Click Me!</button>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("demo");
+        x.style.fontSize = "25px";
+        x.style.color = "red";
+        x.style.backgroundColor="aquamarine";
+      }
+      </script>
+
+    <button onclick="myFunction2()">Reset</button>
+      <script>
+        function myFunction2() {
+          var x = document.getElementById("demo");
+          x.style.fontSize = "20px";
+          x.style.color = "black";
+          x.style.backgroundColor="";
+        }
+      </script>
+<hr>
+
+      <!-- Slideshow container -->
+<div class="slideshow-container">
+  <h1>Slideshow</h1>
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="kepek\1.jpg" style="width:100%">
+    <div class="text">Gyümölcstálak</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="kepek\2.jpg" style="width:100%">
+    <div class="text">Gyümölcstál2</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="kepek\3.jpg" style="width:100%">
+    <div class="text">Gyümölcstál3</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="kepek\4.jpg" style="width:100%">
+    <div class="text">Gyümölcstál4</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="kepek\5.jpg" style="width:100%">
+    <div class="text">Gyümölcstál5</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<hr>
+
+  </body>
+</html>
